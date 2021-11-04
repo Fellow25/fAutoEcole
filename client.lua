@@ -202,7 +202,7 @@ function AutoEcoleRetirerobjet()
                                 if Selected then
                                     local count = KeyboardInput("Combien ?", '' , 8)
                                     TriggerServerEvent('driving:getStockItem', v.name, tonumber(count))
-                                    BRetirerobjet()
+                                    AutoEcoleRetirerobjet()
                                 end
                             end)
                         end
@@ -232,7 +232,7 @@ function AutoEcoleDeposerobjet()
                                             if Selected then
                                             local count = KeyboardInput("Combien ?", '' , 8)
                                             TriggerServerEvent('driving:putStockItems', item.name, tonumber(count))
-                                            BDeposerobjet()
+                                            AutoEcoleDeposerobjet()
                                         end
                                     end)
                                 end
